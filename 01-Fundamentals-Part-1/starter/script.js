@@ -10,3 +10,12 @@ let PI = 3.145;
 
 let myFirstJob = "Programmer";
 let myCurrentJob = "Teacher";
+
+let myCountry = "Montenegro";
+console.log(myCountry);
+
+let myContinent = "Europe";
+console.log(myContinent);
+
+let myPopulation = "Male";
+console.log(myPopulation);
