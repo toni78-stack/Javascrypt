@@ -58,3 +58,14 @@ console.log(ageJonas * 2, ageJonas / 2);
 const firstName = "Jonas";
 const lastName = "Schmedtman";
 console.log(firstName + " " + lastName);
+
+let x = 10 + 5; // 15
+x += 10; // x= x+ 10
+console.log(x);
+
+console.log(ageJonas > ageSarah);
+console.log(ageSarah >= 18);
+
+const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2018);
