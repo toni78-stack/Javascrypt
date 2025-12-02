@@ -71,14 +71,43 @@ const isFullAge = ageSarah >= 18;
 console.log(now - 1991 > now - 2018);
 
 const averageAge = (ageJonas + ageSarah) / 2;
- */
+
 
 const massMark = 78;
 const heightMark = 178;
 const massJohn = 92;
 const heightJohn = 1.95;
 
+
+const massMark = 95;
+const heightMark = 188;
+const massJohn = 85;
+const heightJohn = 1.76;
+
 const BMIMark = massMark / heightMark ** 2;
 const BMIJohn = massJohn / (heightJohn * heightJohn);
 const markHigherBMI = BMIMark > BMIJohn;
-console.log(BMIMark, BMIJohn);
+console.log(BMIMark, BMIJohn, markHigherBMI);
+
+z
+const firstName = "Jonas";
+const job = "teacher";
+const birthYear = "1991";
+const year = "2037";
+
+const jonas =
+  "I am" + firstName + ", a" + (year - birthYear) + "years old" + job + "!";
+console.log(jonas);
+
+const jonasNew = 'I am' ${firstName}', a ${year-birthYear} year old $ (job)!';
+console.log(jonasNew)
+
+console.log('just a regular string ...')
+
+console.log('String with \n\
+  multiple \n\
+  lines ');
+  /*
+  */
+
+  
