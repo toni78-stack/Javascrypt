@@ -163,7 +163,7 @@ console.log(" 23 " * "2");
 let n = "1" + 1;
 n = n - 1;
 console.log(n);
-*/
+
 
 console.log(Boolean(0));
 console.log(Boolean(undefined));
@@ -184,3 +184,8 @@ if (height) {
 } else {
   console.log("Height is undefined");
 }
+*/
+const age = 18;
+if (age === 18) console.log("You just became an adult :D(strict)");
+
+if (age == 18) console.log("You just became and adult :D (loose)");
