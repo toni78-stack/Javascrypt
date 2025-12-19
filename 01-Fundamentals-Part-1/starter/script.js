@@ -208,8 +208,19 @@ if (favorite !== 27) console.log("Why not 27?");
 */
 
 const hasDriverLicence = true;
-const hasGoodVision = false;
+const hasGoodVision = true;
 
 console.log(hasDriverLicence && hasGoodVision);
 console.log(hasDriverLicence || hasGoodVision);
 console.log(!hasDriverLicence);
+
+const shouldDrive = hasDriverLicence && hasGoodVision;
+
+if (hasDriverLicence && hasGoodVision) {
+  console.log("Sarah is able to drive");
+} else {
+  console.log("Someone else should drive...");
+}
+
+const isTired = true;
+console.log(hasDriverLicence || hasGoodVision || isTired);
