@@ -205,7 +205,7 @@ if (favorite == 27) {
 }
 
 if (favorite !== 27) console.log("Why not 27?");
-*/
+
 
 const hasDriverLicence = true;
 const hasGoodVision = true;
@@ -224,3 +224,21 @@ if (hasDriverLicence && hasGoodVision) {
 
 const isTired = true;
 console.log(hasDriverLicence || hasGoodVision || isTired);
+
+if (hasDriverLicence && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive");
+} else {
+  console.log("Someone else should drive");
+} */
+
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas) {
+  console.log("Dolphins win the trophy");
+} else if (scoreKoalas > scoreDolphins) {
+  console.log("Koalas win the trophy");
+} else if ((scoreDolphins = scoreKoalas)) {
+  console.log("They both win the trophy");
+}
