@@ -114,7 +114,7 @@ scoreDolphins = calcAverage(85, 54, 41);
 scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);   */
-
+/*
 const friend1 = "Michael";
 const friend2 = "Steven";
 const friend3 = "Peter";
@@ -155,4 +155,19 @@ const ages = [
   calcAge(years[1]),
   calcAge(years[years.lenght - 1]),
 ];
-console.log(ages);
+console.log(ages); */
+
+const friends = ["Michael", "Steven", "Peter"];
+
+//add elements
+const newLenght = friends.push("Jay");
+console.log(friends);
+console.log(newLenght);
+
+friends.unshift("John");
+console.log(friends);
+
+// remove elements
+
+friends.pop(); //last
+console.log(friends);
