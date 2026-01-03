@@ -156,7 +156,7 @@ const ages = [
   calcAge(years[years.lenght - 1]),
 ];
 console.log(ages); */
-
+/*
 const friends = ["Michael", "Steven", "Peter"];
 
 //add elements
@@ -170,4 +170,34 @@ console.log(friends);
 // remove elements
 
 friends.pop(); //last
+const popped = friends.pop();
+
+console.log(popped);
 console.log(friends);
+
+friends.shift(); // first
+console.log(friends);
+
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("Bob"));
+
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
+
+if (friends.includes("Steven")) {
+  console.log("I have a friend called Steven");
+}
+*/
+
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
+
+// const calcTip = (bill) => (bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20);
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(bills, tips);
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips, totals);
