@@ -211,3 +211,31 @@ const Jonas = {
   friends: ["Michael", "Peter", "Jon"],
 };
 console.log(Jonas);
+
+console.log(Jonas.lastName);
+console.log(Jonas["lastName"]);
+
+const nameKey = "Name";
+console.log(Jonas["first" + nameKey]);
+console.log(Jonas["last" + nameKey]);
+
+const interestedIn = prompt(
+  "What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends "
+);
+console.log(Jonas[interestedIn]);
+
+if (Jonas[interestedIn]) {
+  console.log(Jonas[interestedIn]);
+} else {
+  console.log(
+    "Wrong request! Choose between firstName, lastName, age, job and friends"
+  );
+}
+
+Jonas.location = "Portugal";
+Jonas["twitter"] = "@jonasscmd";
+console.log(Jonas);
+
+console.log(
+  `${Jonas.firstName} has ${Jonas.friends.length} friends, and his best friend is called ${Jonas.friends[0]}`
+);
