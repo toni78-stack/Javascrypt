@@ -240,6 +240,7 @@ console.log(
   `${Jonas.firstName} has ${Jonas.friends.length} friends, and his best friend is called ${Jonas.friends[0]}`
 );
 */
+/*
 const Jonas = {
   firstName: "Jonas",
   lastName: "Schmdt",
@@ -253,9 +254,42 @@ const Jonas = {
   //},
 
   calcAge: function () {
-    console.log(this);
-    return 2037 - this.birthYear;
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()} years old ${
+      Jonas.job
+    }, and he has ${this.hasDriversLicence ? "a" : "no"} drivers licence`;
   },
 };
 
 console.log(Jonas.calcAge());
+console.log(Jonas.getSummary());
+*/
+
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+const jon = {
+  fullName: "Jon Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+mark.calcBMI();
+jon.calcBMI();
+
+console.log(mark.bmi, jon.bmi);
