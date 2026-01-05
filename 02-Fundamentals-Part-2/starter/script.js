@@ -303,7 +303,7 @@ if (mark.bmi > jon.bmi) {
     `${jon.fullName}'s BMI (${jon.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})}`
   );
 }
-*/
+*/ /*
 console.log("Lifting weights repetition 1");
 console.log("Lifting weights repetition 2");
 console.log("Lifting weights repetition 3");
@@ -318,4 +318,36 @@ console.log("Lifting weights repetition 10");
 // for loop keep running while condition is true
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weights repetition ${rep}💪`);
+} */
+
+const jonas = [
+  "Jonas",
+  "Schemdtmn",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+//console.log(jonas[0])
+//console.log(jonas[1])
+//...
+//console.log(jonas[4])
+
+for (let i = 0; i < 5; i++) {
+  console.log(jonas[i], typeof [i]);
+}
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log("Only strings");
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] !== "string") continue;
+  console.log(jonas[i], typeof jonas[i]);
 }
