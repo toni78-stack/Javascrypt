@@ -24,7 +24,11 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent = 'Correct number';
   } else if (guess > secretNumber) {
     document.querySelector('.message').textContent = 'Too high!';
+    score--; //score=score-1
+    document.querySelector('.score').textContent = score;
   } else if (guess < secretNumber) {
     document.querySelector('.message').textContent = 'Too low';
+    score--;
+    document.querySelector('.score').textContent = score;
   }
 });
