@@ -29,7 +29,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
     // when player wins
   } else if (guess === secretNumber) {
-   // document.querySelector('.message').textContent = 'Correct number';
+    // document.querySelector('.message').textContent = 'Correct number';
     displayMessage = 'Correct number';
     document.querySelector('.number').textContent = secretNumber;
 
@@ -44,12 +44,14 @@ document.querySelector('.check').addEventListener('click', function () {
   } else if (guess !== secretNumber) {
     // !== znaci guess je drugaciji od secretNumber
     if (score > 1) {
-      document.querySelector('.message').textContent =
-        guess > secretNumber ? 'Too high!' : 'Too low!'; // : ovdje dodje kao ili ili , .. ako je > onda prva poruka, ako nije onda druga
+      // document.querySelector('.message').textContent =
+      //guess > secretNumber ? 'Too high!' : 'Too low!'; // : ovdje dodje kao ili ili , .. ako je > onda prva poruka, ako nije onda druga
+      displayMessage(guess > secretNumber ? 'Too high!' : 'Too low!');
       score--; //score=score-1
       document.querySelector('.score').textContent = score;
     } else {
-      document.querySelector('.message').textContent = 'You lost the game!';
+      //document.querySelector('.message').textContent = 'You lost the game!';
+      displayMessage = 'You lost the game!';
       document.querySelector('.score').textContent = 0;
     }
     /*
@@ -81,7 +83,8 @@ document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
 
-  document.querySelector('.message').textContent = 'Start guessing..';
+  //document.querySelector('.message').textContent = 'Start guessing..';
+  displayMessage = 'Start guessing..';
   document.querySelector('.score').textContent = score;
   document.querySelector('.number').textContent = '?';
   document.querySelector('.guess').value = '';
